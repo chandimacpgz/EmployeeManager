@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS", "AngularJS\AngularJS.csproj", "{4CA935F5-E237-400D-81EC-C66FFC3223DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationServer", "AuthorizationServer\AuthorizationServer.csproj", "{7FE6DCF2-A4B9-4580-AFBB-8698A297F91C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementServer", "EmployeeManagementServer\EmployeeManagementServer.csproj", "{67B77922-C287-4BE0-AFAD-78AA324F56AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CA935F5-E237-400D-81EC-C66FFC3223DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA935F5-E237-400D-81EC-C66FFC3223DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA935F5-E237-400D-81EC-C66FFC3223DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA935F5-E237-400D-81EC-C66FFC3223DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE6DCF2-A4B9-4580-AFBB-8698A297F91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE6DCF2-A4B9-4580-AFBB-8698A297F91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE6DCF2-A4B9-4580-AFBB-8698A297F91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE6DCF2-A4B9-4580-AFBB-8698A297F91C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B77922-C287-4BE0-AFAD-78AA324F56AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B77922-C287-4BE0-AFAD-78AA324F56AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B77922-C287-4BE0-AFAD-78AA324F56AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B77922-C287-4BE0-AFAD-78AA324F56AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+﻿<h2>Leave Form</h2>
+<style>
+    .datepickerdemoBasicUsage {
+        /** Demo styles for mdCalendar. */
+    }
+
+        .datepickerdemoBasicUsage md-content {
+            padding-bottom: 200px;
+        }
+
+        .datepickerdemoBasicUsage .validation-messages {
+            font-size: 11px;
+            color: darkred;
+            margin: 10px 0 0 25px;
+        }
+</style>
+
+<div>
+    <md-content flex layout-padding>
+        <form ng-submit="addLeave()" role="form" style="padding:50px">
+            <md-input-container class="md-block">
+                <label>Reason</label>
+                <input ng-model="info.reason" type="text" id="inputEmail" class="form-control" required="" autofocus="">
+            </md-input-container>
+            <br />
+            <md-datepicker ng-model="info.startperiod" md-placeholder="Start date"></md-datepicker>
+            <br /><br /><br />
+            <md-datepicker ng-model="info.endPeriod" md-placeholder="End date"></md-datepicker>
+            <br /><br /><br />
+            <md-button class="md-primary md-raised md-hue-2" type="submit">Add Leave</md-button>
+        </form>
+    </md-content>
+</div>

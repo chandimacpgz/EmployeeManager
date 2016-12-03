@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html ng-app="employeeManagementApp">
+<head>
+    <title>My Angular App</title>
+    <meta charset="utf-8" />
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/kendo.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/loading-bar.min.css" rel="stylesheet" type="text/css" />
+    <!--<link href="Content/angular-material/angular-material.css" rel="stylesheet" />-->
+    <link href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+
+
+    <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--<script src="scripts/angular.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js"></script>
+    <script src="scripts/angular-route.js" type="text/javascript"></script>
+    <script src="scripts/angular-resource.js" type="text/javascript"></script>
+    <script src="scripts/angular-local-storage.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js" type="text/javascript"></script>
+    <script src="scripts/kendo.all.min.js" type="text/javascript"></script>
+    <script src="app/app.js" type="text/javascript"></script>
+    <script src="controller/NewViewerController.js" type="text/javascript"></script>
+    <script src="controller/LeaveRequestController.js" type="text/javascript"></script>
+    <script src="controller/GetLeaveController.js" type="text/javascript"></script>
+    <script src="controller/DashboardController.js" type="text/javascript"></script>
+    <script src="controller/UserController.js" type="text/javascript"></script>
+    <script src="controller/DepartmentController.js" type="text/javascript"></script>
+    <script src="controller/LoginController.js" type="text/javascript"></script>
+    <script src="controller/SignUpController.js" type="text/javascript"></script>
+    <script src="scripts/loading-bar.min.js" type="text/javascript"></script>
+    <script src="service/AuthenticateService.js" type="text/javascript"></script>
+    <script src="service/DepartmentService.js" type="text/javascript"></script>
+    <script src="service/LeaveService.js" type="text/javascript"></script>
+    <script src="service/NewViewerService.js" type="text/javascript"></script>
+    <script src="service/SignUpService.js" type="text/javascript"></script>
+    <script src="service/UserService.js" type="text/javascript"></script>
+    <script src="scripts/aes.js" type="text/javascript"></script>
+    <base href="/">
+    <style>
+        h1, h2, h3, h4, h5, label, p, th {
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-image: url('Content/footer_lodyas_light.png');">
+    <md-toolbar class="md-primary md-hue-2">
+        <div class="md-toolbar-tools">
+            <h2 class="md-flex"><a href="http://localhost:2525/index.html#/"><i class="material-icons md-48">home</i>   Employee Managemt System</a></h2>
+        </div>
+    </md-toolbar>
+    <div class="container">
+        <div ng-hide="sign" class="row"><md-button style="float:right;margin-top:10px;" class="md-raised md-primary md-hue-1" ng-click="signout()" typeof="button"><i class="material-icons">exit_to_app</i>sign out</md-button></div>
+        <div ng-view class="row">
+
+        </div>
+
+    </div>
+</body>
+</html>

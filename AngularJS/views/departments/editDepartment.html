@@ -1,0 +1,16 @@
+﻿<div>
+    <h2>Edit Details</h2>
+    <md-content flex layout-padding>
+        <form role="form" ng-submit="editDepartment()">
+            <md-input-container class="md-block">
+                <input type="text" class="form-control" id="name" placeholder="Enter Department Name" value="{{department.name}}" ng-model="department.name">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <input type="text" class="form-control" id="location" placeholder="Enter Location" value="{{department.location}}" ng-model="department.location">
+            </md-input-container>
+            <md-input-container>
+                <md-button type="submit" class="md-primary md-raised md-hue-2">Submit</md-button>
+            </md-input-container>
+        </form>
+    </md-content>
+</div>

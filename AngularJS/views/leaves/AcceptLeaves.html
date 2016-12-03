@@ -1,0 +1,30 @@
+﻿<h3>Accept Leaves</h3>
+<div class="">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Form Id</th>
+                    <th>User Id</th>
+                    <th>Departement</th>
+                    <th>Reason</th>
+                    <th>Start Period</th>
+                    <th>End Period</th>
+                    <th>Accept</th>
+                    <th>Reject</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="leave in AllLeaves">
+                    <th>{{leave.id}}</th>
+                    <th>{{leave.user.name}}</th>
+                    <th>{{leave.user.department.name}}</th>
+                    <th>{{leave.reason}}</th>
+                    <th>{{leave.startPeriod}}</th>
+                    <th>{{leave.endPeriod}}</th>
+                    <td><md-button class="md-primary md-raised md-hue-2" ng-click="acceptLeave(leave)" ng-disabled="leave.infoAccept">Accept</md-button></td>
+                    <td><md-button class="md-warn md-raised" ng-click="rejectLeave(leave)" ng-disabled="leave.infoReject">Reject</md-button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

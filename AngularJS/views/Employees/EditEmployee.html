@@ -1,0 +1,27 @@
+﻿<div class="container">
+    <h2>Edit Details</h2>
+    <md-content flex layout-padding>
+        <form role="form" ng-submit="updateUser()">
+            <md-input-container class="md-block">
+                <input type="text" class="form-control" id="name" placeholder="User Name" value="{{user.name}}" ng-model="user.name">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <input type="email" class="form-control" placeholder="Email" value="{{user.email}}" ng-model="user.email">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <input type="text" class="form-control" id="nic" placeholder="National ID" value="{{user.nic}}" ng-model="user.nic">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label for="Dname">Choose Department:</label>
+                <md-select ng-model="user.departmentId">
+                    <md-option ng-repeat="department in departments" value="{{department.id}}">
+                        {{department.name}}
+                    </md-option>
+                </md-select>
+            </md-input-container><br />
+            <md-input-container>
+                <md-button type="submit" class="md-primary md-raised md-hue-2">Submit</md-button>
+            </md-input-container>
+        </form>
+    </md-content>
+</div>

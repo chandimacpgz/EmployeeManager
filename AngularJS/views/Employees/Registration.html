@@ -1,0 +1,23 @@
+﻿<h2>Create an account</h2>
+<md-content flex layout-padding>
+    <form ng-submit="registration()" role="form">
+        <md-input-container class="md-block">
+            <input ng-model="info.name" type="text" class="form-control" id="name" required="" autofocus="" placeholder="User Name">
+        </md-input-container>
+        <br />
+        <md-input-container class="md-block">
+            <input ng-model="info.password" type="password" class="form-control" id="pw1" required="" autofocus="" ng-required placeholder="Password">
+        </md-input-container>
+        <br />
+        <md-input-container class="md-block">
+            <input ng-model="info.confirmPassword" type="password" class="form-control" id="pw2" required="" autofocus="" ng-required pw-check="pw1" placeholder="Confirm password">
+        </md-input-container>
+        <br />
+        <md-input-container>
+            <md-button class="md-primary md-raised md-hue-2" ng-click="register()" type="submit">Register</md-button>
+        </md-input-container>
+        <md-input-container>
+            <span ng-show="checkPassword">Passwords is not match!</span>
+        </md-input-container>
+    </form>
+</md-content>

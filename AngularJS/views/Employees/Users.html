@@ -1,0 +1,31 @@
+﻿<h2>Employee Details</h2>
+<div class="">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>National ID</th>
+                    <th>Email</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in allusers">
+                    <td>{{user.name}}</td>
+                    <td>{{user.nic}}</td>
+                    <td>{{user.email}}</td>
+                    <td>
+                        <!--ng-hide="(user.Role==" viewer")"-->
+                        <md-button style="float:right;margin-top:10px;" class="md-raised md-primary md-hue-2" href="index.html#/editEmployee/{{user.id}}">Edit</md-button>
+                    </td>
+                    <td>
+                        <!--ng-hide="(user.Role==" viewer")">-->
+                        <md-button style="float:right;margin-top:10px;" class="md-raised md-warn" value="Delete" ng-click="deleteEmployee(user.id)" typeof="button">Delete</md-button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+﻿<div class="row">
+    <style>
+        .custm {
+            margin-left: 25%;
+            margin-right: 25%;
+            padding-left: 20px;
+            background-color: white;
+            padding-right: 20px;
+            border: solid;
+            border-radius: 37px;
+        }
+    </style>
+
+    <div class="custm">
+        <form class="form-signin">
+            <h2 style="color:black;" align="center" class="form-signin-heading">Please sign in</h2>
+            <br /><br />
+            <md-input-container class="md-block">
+                <label for="name">User Name</label>
+                <input ng-model="logindata.name" type="text" class="form-control" id="name" required="" autofocus="" />
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label for="name">Password</label>
+                <input ng-model="logindata.password" type="password" class="form-control" id="inputPassword" required="" autofocus="">
+            </md-input-container>
+            <div class="checkbox">
+                <label style="color:black;">
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+                <md-input-container class="md-block">
+                    <md-button style="width:510px;  " class="md-warn md-raised md-hue-2" ng-click="login()" type="submit">Sign in</md-button>
+                </md-input-container>
+            </div>
+        </form>
+        <br />
+        <p style="color:black;">Not a registered user</p>
+        <md-input-container class="md-block">
+            <md-button style="width:510px; " class="md-warn md-raised md-hue-2" ng-click="signUp()" type="submit">Sign Up</md-button>
+        </md-input-container>
+        <!--<label class="alert alert-danger">{{result}}</label>-->
+    </div>
+</div>
+
+
+
+
+

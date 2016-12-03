@@ -1,0 +1,31 @@
+﻿<div class="container">
+    <h2>Edit Details</h2>
+    <div class="jumbotron">
+        <form role="form" ng-submit="changeRole()">
+
+            <div class="form-group alert alert-info">
+                <label style="color:black;" for="userId">User Name :</label>
+                <label style="color:black;" for="userId">{{user.name}}</label>
+
+            </div>
+            <div class="form-group alert alert-info">
+                <label style="color:black;" for="Role">Role:</label>
+
+                <select class="form-control" ng-model="user.role">
+                    <option value="Admin">Admin</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Viewer">Viewer</option>
+                </select>
+                <br />
+                <label style="color:black;" for="Role">Current Role: {{user.role}}</label>
+
+
+            </div>
+
+            <br />
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

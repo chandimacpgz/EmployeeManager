@@ -1,0 +1,30 @@
+﻿<h2>New Viewer</h2>
+<div class="">
+    <md-content flex layout-padding>
+        <form ng-submit="newViewer()" role="form">
+            <md-input-container class="md-block">
+                <label for="pwd">Name:</label>
+                <input ng-model="viewer.name" type="text" class="form-control" id="email" required="" autofocus="">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label for="pwd">Email:</label>
+                <input ng-model="viewer.email" type="email" class="form-control" id="email" required="" autofocus="">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label for="NIC">NIC No:</label>
+                <input ng-model="viewer.nic" type="text" class="form-control" id="NIC" required="" autofocus="">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label for="Dname">Choose Department:</label>
+                <md-select ng-model="viewer.departmentId">
+                    <md-option ng-repeat="department in departments" value="{{department.id}}">
+                        {{department.name}}
+                    </md-option>
+                </md-select>
+            </md-input-container><br />
+            <md-input-container class="md-block">
+                <md-button class="md-warn md-raised md-hue-2" ng-click="AddViewer()" type="submit">Register</md-button>
+            </md-input-container>
+        </form>
+    </md-content>
+</div>

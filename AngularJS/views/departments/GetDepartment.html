@@ -1,0 +1,28 @@
+﻿<h2>Department Details</h2>
+<div class="">
+    <div class="table-responsive">
+        <!--<kendo-grid options="departments">-->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Department Id</th>
+                    <th>Department Name</th>
+                    <th>Department Location</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="department in allDepartment">
+                    <td>{{department.id}}</td>
+                    <td>{{department.name}}</td>
+                    <td>{{department.location}}</td>
+                    <td>
+                        <md-button class="md-raised md-primary" href="index.html#/editDepartment/{{department.id}}">Edit</md-button>
+                    </td>
+                    <td><md-button class="md-raised md-warn" ng-click="deleteDepartment(department.id)">Delete</md-button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

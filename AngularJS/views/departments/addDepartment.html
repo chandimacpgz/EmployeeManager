@@ -1,0 +1,17 @@
+﻿<h2>Department</h2>
+<md-content flex layout-padding>
+    <form ng-submit="addDepartment()" role="form">
+        <md-input-container class="md-block">
+            <input ng-model="department.Id" type="text" class="form-control" id="id" placeholder="Enter Department ID" autofocus="" required>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <input ng-model="department.Name" type="text" class="form-control" id="name" placeholder="Department name" autofocus="" required>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <input ng-model="department.Location" type="text" class="form-control" id="location" placeholder="Department location" autofocus="" required>
+        </md-input-container>
+        <md-input-container>
+            <md-button type="submit" class="md-primary md-raised md-hue-2">Submit</md-button>
+        </md-input-container>
+    </form>
+</md-content>
